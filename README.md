@@ -1,11 +1,26 @@
- # Raamatupidamisfirma
+# Projekt: IT infrastruktuuri disain ja teostus
 
-Veebiserver
+## Stsenaarium
 
-Kasutame Nginx veebiserverit.
+- Kasutajate arv: 17
+- Ettevõtte tüüp: Raamatupidamisfirma
+- Eritingimus: Kohustuslikud varukoopiad
 
-Põhjendus:
+## Kasutatavad tehnoloogiad
 
-väga kiire ja efektiivne
-suudab käsitleda suurt koormust
-hea turvalisus
+- Docker
+- Nginx
+- PostgreSQL
+- Backup service (cron + volume backup)
+
+## Teenused
+
+- Web (Nginx reverse proxy)
+- Backend (rakendus)
+- Database (PostgreSQL)
+- Backup (automaatne varundamine)
+
+## Käivitamine
+
+```bash
+docker-compose up -d
