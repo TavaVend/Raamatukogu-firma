@@ -1,28 +1,41 @@
 # IT infrastruktuuri disain ja teostus
 
-## 📌 Projekti kirjeldus
-Projekt simuleerib väikese raamatupidamisfirma IT infrastruktuuri.
-
-- Kasutajaid: 17
-- Nõue: kõrge töökindlus + automaatsed varukoopiad
-- Lahendus põhineb Dockeril ja ise hostitud teenustel
+## 📌 Projekti eesmärk
+Luua väikese raamatupidamisfirma (17 kasutajat) IT infrastruktuur, kasutades konteinertehnoloogiat ja ise hostitud teenuseid.
 
 ---
 
 ## 🏗️ Arhitektuur
 
-Teenused:
+Süsteem koosneb järgmistest teenustest:
 
-- **Nginx** – reverse proxy
-- **Backend** – rakendus (API / web app)
+- **Nginx** – reverse proxy (suunab liikluse backendile)
+- **Backend** – rakendus
 - **PostgreSQL** – andmebaas
 - **Backup service** – automaatne varundamine
+
+### Andmevoog
+
+Kasutaja → Nginx → Backend → PostgreSQL
+
+---
+
+## 👤 Kliendid
+
+Kasutajad pääsevad süsteemile ligi veebibrauseri kaudu:
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+
+Ühendus toimub HTTP/HTTPS kaudu.
 
 ---
 
 ## ⚙️ Kasutatavad tehnoloogiad
 
-- Docker & Docker Compose
+- Docker
+- Docker Compose
 - Nginx
 - PostgreSQL
 - Cron (backup)
@@ -31,6 +44,7 @@ Teenused:
 
 ## 🚀 Käivitamine
 
+### 1. Kopeeri keskkonnamuutujad
+
 ```bash
 cp .env.example .env
-docker-compose up -d
