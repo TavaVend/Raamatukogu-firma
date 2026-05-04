@@ -42,6 +42,16 @@ Kasutajad pääsevad süsteemile ligi veebibrauseri kaudu:
 
 ---
 
+## 🔐 Võrgudisain
+
+Kõik teenused töötavad eraldi Docker võrgus (`app_network`).
+
+- Ainult Nginx on avalikult ligipääsetav (port 80)
+- Backend ja andmebaas on sisemised teenused
+- See tagab parema turvalisuse
+
+---
+
 ## 🚀 Käivitamine
 
 ### 1. Kopeeri keskkonnamuutujad
