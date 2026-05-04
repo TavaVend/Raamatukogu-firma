@@ -1,26 +1,36 @@
-# Projekt: IT infrastruktuuri disain ja teostus
+# IT infrastruktuuri disain ja teostus
 
-## Stsenaarium
+## 📌 Projekti kirjeldus
+Projekt simuleerib väikese raamatupidamisfirma IT infrastruktuuri.
 
-- Kasutajate arv: 17
-- Ettevõtte tüüp: Raamatupidamisfirma
-- Eritingimus: Kohustuslikud varukoopiad
+- Kasutajaid: 17
+- Nõue: kõrge töökindlus + automaatsed varukoopiad
+- Lahendus põhineb Dockeril ja ise hostitud teenustel
 
-## Kasutatavad tehnoloogiad
+---
 
-- Docker
+## 🏗️ Arhitektuur
+
+Teenused:
+
+- **Nginx** – reverse proxy
+- **Backend** – rakendus (API / web app)
+- **PostgreSQL** – andmebaas
+- **Backup service** – automaatne varundamine
+
+---
+
+## ⚙️ Kasutatavad tehnoloogiad
+
+- Docker & Docker Compose
 - Nginx
 - PostgreSQL
-- Backup service (cron + volume backup)
+- Cron (backup)
 
-## Teenused
+---
 
-- Web (Nginx reverse proxy)
-- Backend (rakendus)
-- Database (PostgreSQL)
-- Backup (automaatne varundamine)
-
-## Käivitamine
+## 🚀 Käivitamine
 
 ```bash
+cp .env.example .env
 docker-compose up -d
