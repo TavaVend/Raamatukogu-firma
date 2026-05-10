@@ -54,7 +54,16 @@ Kõik teenused töötavad eraldi Docker võrgus (`app_network`).
 
 ## 🚀 Käivitamine
 
-### 1. Kopeeri keskkonnamuutujad
+1. Kopeeri keskkonnamuutujad
+   cp .env.example .env
 
-```bash
-cp .env.example .env
+2. Muuda .env failis paroolid
+
+3. Käivita teenused
+   docker-compose up -d
+
+4. Kontrolli et kõik töötab
+   docker-compose ps
+
+5. Vaata logisid
+   docker-compose logs -f
