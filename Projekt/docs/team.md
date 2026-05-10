@@ -8,6 +8,10 @@
 | Kert Leppanen | Liige | Serverite ja Docker keskkonna seadistamine |
 | Albert Raude | Liige | Teenuste (Nginx, backend, andmebaas) seadistamine |
 
+## Stsenaarium
+
+| Parameeter | Väärtus |
+|------------|---------|
 | Kasutajate arv | 17 |
 | Ettevõtte tüüp | Raamatupidamisfirma |
 | Eritingimus | Varukoopiad on kohustuslikud |
