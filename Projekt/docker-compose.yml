@@ -45,6 +45,10 @@ services:
       - backup_data:/backup
     networks:
       - app_network
+      backup:
+  volumes:
+    - ./backup.sh:/backup.sh
+    - backup_data:/backup
 
 volumes:
   db_data:
