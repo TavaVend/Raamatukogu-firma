@@ -36,19 +36,17 @@ services:
     networks:
       - app_network
 
-  backup:
+ backup:
     image: backup-service:latest
+    restart: unless-stopped
     depends_on:
       - db
     volumes:
       - db_data:/data
       - backup_data:/backup
+      - ./backup.sh:/backup.sh
     networks:
       - app_network
-      backup:
-  volumes:
-    - ./backup.sh:/backup.sh
-    - backup_data:/backup
 
 volumes:
   db_data:
