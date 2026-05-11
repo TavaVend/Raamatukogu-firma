@@ -40,7 +40,7 @@ Kasutaja (brauser)
 
 ```bash
 cp config/.env.example config/.env
-docker-compose up -d
+sudo docker-compose up -d
 ```
 
 Ava brauser: `http://localhost`
