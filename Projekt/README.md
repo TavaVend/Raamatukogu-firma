@@ -63,10 +63,9 @@ managerio-backup-2026-05-11.tar.gz
 
 ---
 
-## Kiirkäivitus (järgmisel korral)
+## Kiirkäivitus
 
 ```bash
-ssh rpfserver@10.69.41.78
 cd Raamatupidamisfirma/Projekt
 sudo docker-compose up -d
 ```
