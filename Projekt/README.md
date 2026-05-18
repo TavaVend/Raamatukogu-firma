@@ -24,7 +24,7 @@ Me ei kirjutanud tarkvara ise. Me valisime olemasoleva lahenduse ja seadistasime
 Teenus töötab VPN võrgus. Ligipääsuks on vaja:
 
 1. Ühenda **TPTLAB-STUDVPN**-iga
-2. Ava brauser ja mine: `http://10.69.41.78`
+2. Ava brauser ja mine: `http://10.69.41.187`
 
 ---
 
